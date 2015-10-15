@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+div.spacer {
+  padding-top: 100px;
+}
+
+
+.tooltip-wrap {
+  position: relative;
+}
+
+.horus {
+    border-collapse: collapse;
+	border:thin solid #000000;
+	padding:2px;
+}
+
+.horus td{
+    border-collapse: collapse;
+	border:thin solid #000000;
+	/* Top Right Bottom Left */
+	padding-left: 1px 2px 1px 2px;
+	vertical-align: text-top;
+}
+
+/* tr:first-child td, tr td:first-child { */
+
+.horus tr td:first-child{
+	font-weight: bold;
+}
+
+/* style="border:thin; border-color:#000000; border-style:solid" */
+
+#artifact-info {
+	margin:0 8px;
+	width:19px; 
+	height:19px;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  text-align: justify; 
+  width: 800px;
+  
+/*  
+  position:fixed;
+        top:40px;*/
+  /*
+  left: 100px; 
+  top: 50px; 
+*/
+/*  visisbility:hidden;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+
+  background: #FFFFCC;
+     */
+  background: #000000;
+/*  background-color: #fff;
+  padding: .5em;*/
+/*  max-width 800px;
+  width: 50%;*/
+/* Top Right Bottom Left */
+  margin: -100px 0 0 25px;
+  overflow: hidden;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+/*  max-width: 400px;*/
+}
+
+
+.details, .artifacts { display: none;}
+
+.silobuilds{
+    border-width:3px;	
+    border-style:groove;
+}
+.xopen {width:17px; height:17px; background:url(toggle.png) 0 0px; display:inline;float:left;}
+.xclose {width:17px; height:17px; background:url(toggle.png)  0 -17px; display:inline;float:left;}
+
+.yopen {width:38px; height:19px; background:url(htog.png) 0 0px; display:inline;float:left;}
+.yclose {width:38px; height:19px; background:url(htog.png)  0 -19px; display:inline;float:left;}
+
+.open {width:19px; height:19px; background:url(ctog.png) 0 0px; display:inline;float:left;}
+.close {width:19px; height:19px; background:url(ctog.png)  0 -18px; display:inline;float:left;}
+
+.cshow {width:19px; height:19px; background:url(ctogx.png) 0 0px; display:inline;float:left;}
+.chide {width:19px; height:19px; background:url(ctogx.png)  0 -18px; display:inline;float:left;}
+
+.slog {
+	width: 0px;
+	height: 0px; 
+	outline:none;
+	margin: 2px;
+	padding: 9px;
+	background: url(log-icons.png) 0 0;
+	display: inline;
+	border-style: none;
+}
+
+.elog {
+	width: 0px;
+	height: 0px; 
+	outline:none;
+	margin: 2px;
+	padding: 9px;
+	background: url(log-icons.png) -18px 0;
+	display: inline;
+	border-style: none;
+}
+
+.ilog {
+	width: 0px;
+	height: 0px; 
+	outline:none;
+	margin: 2px;
+	padding: 9px;
+	background: url(log-icons.png) -36px 0;
+	display: inline;
+	border-style: none;
+}
+
+table{
+	width:auto;
+	padding: 0px;
+	margin: 0px
+}
+
+.repotTable {
+	/*	margin:0px;
+	padding:0px;*/
+	width:100%;
+	border:thin solid #000000;
+	vertical-align: text-top;
+}
+.repotTable table{
+    border-collapse: collapse;
+/*  border-spacing: 0; */
+	width:100%;
+	height:100%;
+/*	margin:0px; */
+/*	padding:0px; */
+}
+
+.repotTable tr:nth-child(odd){background-color:#aad4ff; }
+.repotTable tr:nth-child(even){background-color:#ffffff; }
+
+.artifactRowA {
+	border:thin solid #FCFFE6;
+	/*padding:8px;*/
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	padding-top: 5px;
+}
+.artifactRowB {
+	border:thin solid #DEFFFD;
+	/*padding:8px;*/
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	padding-top: 5px;
+}
+.artifactHeaderRow {
+	border:thin solid #64BFDE;
+	/*padding:8px;*/
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	padding-top: 5px;
+}
+
+.repotTable td {
+	border:thin solid #000000;
+	/*padding:8px;*/
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+	padding-top: 5px;
+}
+.repotTable th {
+	background-color:#005fbf;
+	border:thin solid #000000;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+/*	padding:5px*/
+}
+#report-title {
+	text-align:center;
+	background-color:#005fbf;
+	border:thin solid #000000;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+#sub-title {
+	text-align:center;
+	background-color:#005fbf;
+	border:thin solid #000000;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}

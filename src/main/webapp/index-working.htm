@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Silo Build Log</title>
+<link rel="stylesheet" type="text/css" href="poseidon.css" />
+<script src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+	$(".toggle").click(function(event){
+		//$(".silobuilds tr[class^='Level1']").toggle();
+		//jAlert('This is a custom alert box', 'Alert Dialog');
+		//var colkey = "details" + $(this).attr('id');
+		//alert("COLUMN-ID: " + colkey);
+		$(".silobuilds tr[id='details" + $(this).attr('id') + "']").toggle();
+		// Stop the link click from doing its normal thing
+		return false;
+	}); // END TOGGLE
+   }); // END ready function
+</script>
+</head>
+
+<body>
+
+	<table class="silobuilds" border="1">
+	    <tr><td>
+        <table border="1">
+		<tr class="toggle"  id="1">
+        	<td>silobuild_id</td>
+            <td>state_id</td>
+            <td>total_containers</td>
+            <td>total_pass</td>
+            <td>total_fail</td>
+            <td>start_time</td>
+            <td>stop_time</td>
+            <td>arguments</td>
+            <td>total_build_time</td>
+            <td>started_by</td>
+        </tr>        
+		<tr>
+            <td>3</td>
+            <td>3</td>
+            <td>21</td>
+            <td>21</td>
+            <td>0</td>
+            <td>9/9/2015 20:01</td>
+            <td>9/10/2015 0:16</td>
+            <td>'-r', '--usedb', '--debug', '--tag', '--push', '--overwrite', '--forcetag', '--registry', 'iris-analytics.tk', '--skip', 'ui-loa</td>
+            <td>14:54.9</td>
+            <td>sgee</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+		<tr class="details"  id="details1">
+        <td>
+            <table border="1">
+                <tr>
+                    <td>silobuild_id</td>
+                    <td>state_id</td>
+                    <td>total_containers</td>
+                    <td>total_pass</td>
+                    <td>total_fail</td>
+                    <td>start_time</td>
+                    <td>stop_time</td>
+                    <td>arguments</td>
+                    <td>total_build_time</td>
+                    <td>started_by</td>
+                </tr>        
+            </table>
+        </td>
+        </tr>        
+
+	</table>
+	
+
+
+
+
+
+</body>
+</html>

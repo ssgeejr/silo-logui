@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Silo Build Log</title>
+<link rel="stylesheet" type="text/css" href="poseidon.css" />
+<script src="jquery-1.11.3.min.js"></script>
+<script language="javascript">
+
+   // START ready function
+   $(document).ready(function(){
+ 
+	// TOGGLE SCRIPT
+	$(".hide").hide();
+ 
+	$("a.toggle").click(function(event){
+		$(this).parents(".article").find(".hide").toggle("normal");
+ 
+		// Stop the link click from doing its normal thing
+		return false;
+	}); // END TOGGLE
+ 
+   }); // END ready function
+
+</script>
+</head>
+
+<body>
+<table width="1200" border="0">
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<hr width="100%">
+
+<table>
+<tr>
+<td><a class="toggle" href="#">Toggle 1 »</a></td>
+<div class="hide">
+<td>
+	<table>
+    <tr>
+    <td>00001</td>
+    <td>00001</td>
+    </tr>
+    <tr>
+    <td>00002</td>
+    <td>00002</td>
+    </tr>
+    <tr>
+    <td>00003</td>
+    <td>00003</td>
+    </tr>
+    </table>
+</td>
+</div>
+</table>
+
+<div class="article">
+   <a class="toggle" href="#">Toggle 1 »</a>
+<div class="hide">
+ 
+Hidden toggle content 1.</div>
+</div>
+
+<div class="article">
+   <a class="toggle" href="#">Toggle 2 »</a>
+<div class="hide">
+ 
+Hidden toggle content 2.</div>
+</div>
+<div class="article">
+   <a class="toggle" href="#">Toggle 3 »</a>
+<div class="hide">
+ 
+	<table>
+    <tr>
+    <td>00001</td>
+    <td>00001</td>
+    </tr>
+    <tr>
+    <td>00002</td>
+    <td>00002</td>
+    </tr>
+    <tr>
+    <td>00003</td>
+    <td>00003</td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Silo Build Log</title>
+<link rel="stylesheet" type="text/css" href="silo-logui.css" />
+<script src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+         $(document).ready(function(){
+         $(".open, .close").click(function(event){
+         $(".silobuilds tr[id='details" + $(this).attr('id') + "']").toggle();
+         $(this).toggleClass("open close");
+         return false;
+         }); // END TOGGLE
+         
+         $(".cshow, .chide").click(function(event){
+         $(".details tr[id='C" + $(this).attr('id') + "']").toggle();
+         $(this).toggleClass("cshow chide");
+         return false;
+         }); // END TOGGLE
+         
+         }); // END ready function
+      </script>
+</head>
+<body>
+
+<div class="repotTable" >
+	<table width="1200" class="silobuilds" border="0">
+  									  
+		<!-- BUILD TABLE OPENED --> 
+		<tr>
+			<th id="report-title">Iris-Analytic Docker Build: #33</th>
+    </tr>
+    <tr>
+			<td>
+				<table width="1200" border="0">
+  									  
+		<!-- BUILD TABLE OPENED [2][0][2] --> 
+					<tr>
+						<th width="20" align="center" valign="top"></th>
+						<th width="70" align="center" valign="top">State</th>
+						<th width="50" align="center" valign="top">Total</th>
+						<th width="50" align="center" valign="top">Passed</th>
+						<th width="50" align="center" valign="top">Failed</th>
+						<th width="125" align="center" valign="top">Start</th>
+						<th width="125" align="center" valign="top">Stop</th>
+						<th width="100" align="center" valign="top">Build Time</th>
+						<th width="160" align="center" valign="top">Owner</th>
+						<th width="450" align="left" valign="top">Arguments</th>
+					</tr>
+					<tr>
+						<td width="20" align="center" valign="top"><div class="open" id="33"></div></td>
+						<td width="70" align="center" valign="top">failed</td>
+						<td width="50" align="center" valign="top">21</td>
+						<td width="50" align="center" valign="top">4</td>
+						<td width="50" align="center" valign="top">17</td>
+						<td width="125" align="center" valign="top">2015-09-16 15:57:51.0</td>
+						<td width="125" align="center" valign="top">2015-09-16 16:56:07.0</td>
+						<td width="100" align="center" valign="top">0:58:16.222278</td>
+						<td width="160" align="center" valign="top">sgee</td>
+						<td width="450" align="left" valign="top">'-r', '--usedb', '--debug', '--tag', '--push', '--overwrite', '--forcetag', '--registry', 'iris-analytics.tk', '--skip', 'centos</td>
+					</tr>
+				</table>
+  									  
+		<!-- BUILD TABLE CLOSED [2][1][1]  --> 
+			</td>
+    	</tr>
+    	<tr class="details" id="details33">
+ 	<td>
+     	<table width="1200" border="0">
+  									  
+		<!-- CONTAINER TABLE OPENED [1][0][1] --> 
+         	 <tr>
+            		<td>
+               		<table width="1200" border="0">
+  									  
+		<!-- CONTAINER TABLE OPENED [2][0][2] --> 
+                			<tr>
+                  			<td id="sub-title" colspan="9">Container Details</td>
+                			</tr>
+                			<tr>
+                  			<th width="20" align="center" valign="top"></th>
+                  			<th width="65" align="center" valign="top">ID</th>
+                  			<th width="70" align="center" valign="top">State</th>
+                  			<th width="125" align="center" valign="top">Start</th>
+                  			<th width="125" align="center" valign="top">Stop</th>
+                  			<th width="100" align="center" valign="top">Build Time</th>
+                  			<th width="125" align="left" valign="top">File</th>
+                  			<th width="250" align="left" valign="top">Dir</th>
+                  			<th width="335" align="left" valign="top">Error Message</th>
+                			</tr>
+                			<tr>
+                  			<td width="20" align="center" valign="top">
+                  				<div class="cshow" id="404"></div>
+                  			</td>
+                  			<td align="center" valign="top">404</td>
+                  			<td align="center" valign="top">successful</td>
+                  			<td align="center" valign="top">2015-09-16 15:57:52.0</td>
+                  			<td align="center" valign="top">2015-09-16 16:10:31.0</td>
+                  			<td align="center" valign="top">0 0:12:39</td>
+                  			<td align="left" valign="top">container.xml</td>
+                  			<td align="left" valign="top">/opt/projects/ia-deployment/docker/diamond-collector</td>
+                  			<td align="left" valign="top"></td>
+                			</tr>
+          				<tr class="artifacts" id="C404">
+            					<td colspan="9">
+                					<table width="1200" border="0">
+  									  
+		<!-- ARTIFACT TABLE OPENED [1][0][1]  --> 
+                						<tr>
+                  						<td id="sub-title" colspan="9">
+                  							Artifact Details
+                  						</td>
+                						</tr>
+                						<tr>
+                  						<td widtd="20" align="center" valign="top">XXXXX</td>
+                  						<td widtd="45" align="center" valign="top">ID</td>
+                  						<td widtd="70" align="center" valign="top">State</td>
+                  						<td widtd="125" align="center" valign="top">Start</td>
+                  						<td widtd="125" align="center" valign="top">Stop</td>
+                  						<td widtd="100" align="center" valign="top">Time</td>
+                  						<td widtd="200" align="left" valign="top">File Name</td>
+                  						<td widtd="400" align="left" valign="top">URL</td>
+                  						<td widtd="125" align="left" valign="top">Error Message</td>
+ 										</tr>
+                						<tr>
+                  						<td width="20" align="center" valign="top">[IMG]</td>
+                  						<td width="45" align="center" valign="top">428</td>
+                  						<td width="70" align="center" valign="top">successful</td>
+                  						<td width="125" align="center" valign="top">2015-09-16 15:57:52.0</td>
+                  						<td width="125" align="center" valign="top">2015-09-16 15:57:52.0</td>
+                  						<td width="100" align="center" valign="top">0 0:0:0</td>
+                  						<td width="200" align="left" valign="top">./Diamond-4.0.cf2a37da.tar.gz</td>
+                  						<td width="400" align="left" valign="top"><a href="http://tekcomms-artifactory.global.tektronix.net:8081/artifactory/simple/legacy-tekint/com/github/Diamond/4.0.cf2a37da/Diamond-4.0.cf2a37da.tar.gz">... ond/4.0.cf2a37da/Diamond-4.0.cf2a37da.tar.gz</a></td>
+                  						<td width="125" align="left" valign="top">  </td>
+                						</tr>
+                						<tr>
+                  						<td width="20" align="center" valign="top">[IMG]</td>
+                  						<td width="45" align="center" valign="top">429</td>
+                  						<td width="70" align="center" valign="top">successful</td>
+                  						<td width="125" align="center" valign="top">2015-09-16 15:57:52.0</td>
+                  						<td width="125" align="center" valign="top">2015-09-16 15:57:52.0</td>
+                  						<td width="100" align="center" valign="top">0 0:0:0</td>
+                  						<td width="200" align="left" valign="top">./docker-py-1.3.1.tar.gz</td>
+                  						<td width="400" align="left" valign="top"><a href="http://tekcomms-artifactory.global.tektronix.net:8081/artifactory/legacy-tekint/com/github/docker-py/1.3.1/docker-py-1.3.1.tar.gz">... ithub/docker-py/1.3.1/docker-py-1.3.1.tar.gz</a></td>
+                  						<td width="125" align="left" valign="top">  </td>
+                						</tr>
+  									  </table>
+  									  
+		<!-- ARTIFACT TABLE CLOSURE [1][1][0] --> 
+     								</td>		<!-- ARTIFACT TD CLOSURE --> 
+  								  </tr>		<!-- ARTIFACT TR CLOSURE --> 
+  						</table>
+  						
+		<!-- CONTAINER TABLE CLOSURE [2][1][1] --> 
+     				</td>		<!-- CONTAINER TD CLOSURE --> 
+  				</tr>		<!-- CONTAINER TR CLOSURE --> 
+  						</table>
+  						
+		<!-- CONTAINER TABLE CLOSURE [2][2][0] --> 
+     				</td>		<!-- CONTAINER TD CLOSURE --> 
+  				</tr>		<!-- CONTAINER TR CLOSURE --> 
+  		</table>
+  		
+		<!-- BUILD TABLE CLOSURE [2][2][0]  --> 
+
+
+
+				<!-- ARTIFACT [1][1][0] --> 
+
+
+
+				<!-- CONTAINER [2][2][0] --> 
+
+
+
+				<!-- BUILD [2][2][0] --> 
+
+<div class="spacer"></div>
+
+</div>
+
+</body>
+</html>

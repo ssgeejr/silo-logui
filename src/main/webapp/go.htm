@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="jquery-1.11.3.min.js"></script>
+	<style>
+		.Level1 {display:none;}
+	</style>
+	<script type="text/javascript">
+
+
+   // START ready function
+   $(document).ready(function(){
+
+	$("a.toggle").click(function(event){
+		//$(this).parents(".article").find(".hide").toggle("normal");
+ 		$(".mainTable tr[class^='Level1']").toggle();
+		// Stop the link click from doing its normal thing
+		return false;
+	}); // END TOGGLE
+ 
+   }); // END ready function
+
+
+
+	</script>
+    
+    $(".mainTable td[class^='Level1']").show();
+</head>
+<body>
+
+	<table id="Table1" class="mainTable">
+		<tr><td><a href="" class="toggle">row1</td></tr>
+		<tr class="Level1" ><td>hidden at first</td>
+        <td>hidden at first</td>
+        </tr>
+		<tr><td>row4</td></tr>
+	</table>
+	
+	<input type="button" onclick="showhide('Table2');" value="Show"></input>
+	<table id="Table2">
+		<tr><td>row1</td></tr>
+		<tr class="commentdialogue"><td>hidden at first</td></tr>
+		<tr class="commentdialogue"><td>hidden at first</td></tr>
+		<tr><td>row4</td></tr>
+	</table>
+<body>
+</html>

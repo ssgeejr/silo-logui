@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Silo Build Log</title>
+<link rel="stylesheet" type="text/css" href="poseidon.css" />
+<script src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+	$(".toggle").click(function(event){
+		//$(".silobuilds tr[class^='Level1']").toggle();
+		//jAlert('This is a custom alert box', 'Alert Dialog');
+		//var colkey = "details" + $(this).attr('id');
+		//alert("COLUMN-ID: " + colkey);
+		$(".silobuilds tr[id='details" + $(this).attr('id') + "']").toggle();
+		// Stop the link click from doing its normal thing
+		return false;
+	}); // END TOGGLE
+   }); // END ready function
+</script>
+</head>
+
+<body>
+	<table class="silobuilds" border="1">
+		<tr class="toggle" id="1">
+        	<td width="68" align="center" valign="top">silobuild_id</td>
+            <td width="47" align="center" valign="top">state_id</td>
+            <td width="95" align="center" valign="top">total_containers</td>
+            <td width="61" align="center" valign="top">total_pass</td>
+            <td width="51" align="center" valign="top">total_fail</td>
+            <td width="104" align="center" valign="top">start_time</td>
+            <td width="111" align="center" valign="top">stop_time</td>
+            <td width="413" align="left" valign="top">arguments</td>
+            <td width="96" align="center" valign="top">total_build_time</td>
+            <td width="65" align="center" valign="top">started_by</td>
+        </tr>        
+	</table>
+	
+</body>
+</html>
